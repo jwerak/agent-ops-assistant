@@ -17,7 +17,7 @@ from langgraph.prebuilt import create_react_agent
 # Initialize colorama with forced colors for container environments
 # strip=False keeps colors even when output is not directly to terminal
 # force colors if FORCE_COLOR env var is set
-FORCE_COLOR = os.getenv("FORCE_COLOR", "0") in ("1", "true", "yes")
+FORCE_COLOR = os.getenv("FORCE_COLOR", "1") in ("1", "true", "yes")
 init(autoreset=True, strip=False if FORCE_COLOR else None)
 
 try:
